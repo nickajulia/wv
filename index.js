@@ -25,9 +25,5 @@ app.use(function(req, res, next) {
 app.get('/', (req, res) => {
     res.send('Up and running!');
 });
-app.get('/webhook', (req, res) => {
-    res.send('Updated!');
-});
-
 //start server
 app.listen(process.env.PORT, () => console.log('App started!'));
